@@ -1,0 +1,508 @@
+/* Body styling (unchanged) */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-overlay p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #f0f0f0; 
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    padding: 0 20px; 
+    max-width: 600px; 
+    font-style: italic;
+    font-weight: 300;
+    border-left: 4px solid #00796b;
+    padding-left: 15px;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #004d40;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #00796b;
+    transform: scale(1.05); 
+}
+
+
+/* Navbar styling */
+.navbar {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    gap: 20px; 
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #004d40;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+.top-left-home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.top-left-home-button a {
+    color: white;
+    text-decoration: none;
+    background-color: #004d40;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-left-home-button a:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.attractions-section {
+    padding: 100px;
+    background-color: #e8f5e9;
+    text-align: center;
+}
+
+.attractions-section h2 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.attractions-description {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+.attractions-description  {
+    font-size: 1.4rem; 
+    line-height: 1.6; 
+    color: #555;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    text-align: justify; 
+    padding: 25px; 
+    border-left: 5px solid #00796b; 
+    background-color: rgba(240, 240, 240, 0.6); 
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+    font-style: italic;
+}
+
+.attractions-description:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.attraction-card {
+    display: inline-block;
+    width: 300px;
+    height: 360px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.attraction-card:hover {
+    transform: scale(1.05);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 170px;
+}
+
+.attraction-card h3 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin: 15px 0 10px;
+}
+
+.attraction-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #004d40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 400px;
+}
+
+.footer-logo a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-logo a:hover {
+    color: #b2dfdb;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #b2dfdb;
+}  
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-socials a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a:hover img {
+    transform: translateY(-5px); 
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #b2dfdb;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Events Section */
+
+.events-section h2 {
+    font-size: 3rem;
+    color: #004d40; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.events-section {
+    padding: 75px;
+    background-color: #e8f5e9; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 320px; 
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: center; 
+}
+
+.cuisine-section {
+    padding: 60px;
+    background-color: #e8f5e9;
+}
+h1, h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: #00796b; 
+    font-size: 3rem;
+}
+
+.dish-card, .restaurant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 350px; 
+    height: auto; 
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.dish-card:hover, .restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-card img, .restaurant-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; 
+}
+
+.dish-card h3, .restaurant-card h3 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.dish-card p, .restaurant-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: center; 
+}
+.overview {
+    font-size: 1.3rem;
+    color: #333; 
+    margin: 15px 0;
+    padding: 30px 30px; 
+    text-align: center;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-buttons button:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+.buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-content: center;
+    color: white;
+     text-decoration: none;
+    padding: 10px 20px;
+     background-color: #004d40;
+     border-radius: 5px;
+     font-weight: bold;
+     transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 23px;
+}
+
+.food-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.food-details {
+    padding: 10px;
+}
+
+.spice-level {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+body{
+    background-color: #e8f5e9;
+}

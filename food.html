@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .food-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .food-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .food-details {
+            padding: 10px;
+        }
+
+        .spice-level {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="top-left-home-button">
+        <a href="index.html">Visit South Africa</a>
+    </div>
+
+    <div class="navbar">
+        <a href="about.html" class="button">About</a>
+        <a href="events.html" class="button">Events</a>
+        <a href="food.html" class="button">Cuisine🍽️</a>
+    </div>
+    <h1>Explore South African Foods</h1>
+    <div class="buttons">
+        <button onclick="filterFood('all')">All</button>
+        <button onclick="filterFood('veg')">Veg</button>
+        <button onclick="filterFood('nonveg')">Non-Veg</button>
+        <button onclick="filterFood('seafood')">Seafood</button>
+    </div>
+    <div id="foodContainer" class="food-container"></div>
+
+    <section id="restaurants" class="cuisine-section">
+        <h2>Top Restaurants in South Africa</h2>
+        <p class="overview">Embark on a culinary journey through South Africa's...</p>
+        <div class="cards">
+            <a href="https://ttkfledgelings.co.za/home/">
+              <div class="restaurant-card">
+                <h3>The Test Kitchen</h3>
+                <p>Location: Cape Town</p>
+                <p>Known for its innovative and world-renowned dining experience.</p>
+                <p class="description">Step into The Test Kitchen, where culinary artistry meets imaginative flair...</p>
+            </div>
+            </a>
+            <a href="https://marble.restaurant/">
+            <div class="restaurant-card">
+                <h3>Marble</h3>
+                <p>Location: Johannesburg</p>
+                <p>A fine dining restaurant that celebrates live-fire cooking.</p>
+                <p class="description">At Marble, the crackle of flames and the aroma of charred perfection...</p>
+            </div>
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">South Africa Tourism</a>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="food.html">Cuisine</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/SafiriSouthAfrica/" target="_blank"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://x.com/southafrica?lang=en" target="_blank"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/meetsouthafrica" target="_blank"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 South Africa Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
