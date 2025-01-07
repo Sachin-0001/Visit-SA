@@ -6,7 +6,7 @@
   <title>Explore South Africa</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
 
@@ -49,36 +49,38 @@
    
 
   <section id="attractions" class="attractions-section">
-    <h2>Discover the Wonders of South Africa</h2>
+    <h2 data-aos="fade-up" data-aos-duration="1000">Discover the Wonders of South Africa</h2>
     <p class="attractions-description">
         South Africa is a land of breathtaking diversity, where sweeping landscapes, abundant wildlife, and vibrant cities come together to create an unforgettable experience. From the majestic Table Mountain overlooking Cape Town to the vast plains of Kruger National Park, every corner of South Africa holds a unique beauty. Explore the serene beaches, taste the rich flavors of local cuisine, and immerse yourself in the rich tapestry of cultures that make South Africa one of the world’s most captivating destinations.
     </p>
     <br>
     <br>
-    <h2>Most Popular</h2>
-    <div class="attraction-card">
-      <a href="capetown.html">
+    <h2 data-aos="fade-up" data-aos-duration="1000">Most Popular</h2>
+    <a href="capetown.html">
+      <div class="attraction-card">
       <img src="assets/pexels-pixabay-259447.jpg" alt="Cape Town">
       <h3>Cape Town</h3>
       <p>Experience the beauty of Table Mountain, pristine beaches, and the vibrant city life of Cape Town.</p>
-      </a>
-    </div>
+    </div></a>
+    <a href="kruger.html">
     <div class="attraction-card">
-      <a href="kruger.html">
       <img src="assets/martijn-vonk-N2uoOGaoTy8-unsplash.jpg" alt="Kruger National Park">
       <h3>Kruger National Park</h3>
-      <p>Discover Africa's iconic wildlife and embark on an adventure through South Africa’s premier safari destination.</p>
-      </a>
-    </div>
+      <p>Discover Africa’s iconic wildlife and embark on an adventure through South Africa’s premier safari destination.</p>
+    </div></a>
+
+    <a href="beach.html">
     <div class="attraction-card">
-      <a href="beach.html">
       <img src="assets/pexels-joseph-phillips-2044494-3677175.jpg" alt="Kruger National Park">
       <h3>Boulders Beach</h3>
       <p>Discover Boulders Beach, a serene haven nestled among ancient granite boulders, where you can enjoy crystal-clear waters and a unique colony of African penguins.</p>
-      </a>
-    </div>
+    </div></a> 
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
+<script>
+  AOS.init();
+</script>
 
 <footer class="footer">
   <div class="footer-content">

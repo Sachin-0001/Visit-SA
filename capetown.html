@@ -6,6 +6,7 @@
   <title>Explore Cape Town</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
   <div class="top-left-home-button">
@@ -15,10 +16,10 @@
   <div class="navbar">
     <a href="about.html" class="button">About</a>
     <a href="events.html" class="button">Events</a>
-    <a href="food.html" class="button">Cuisine🍽️</a>
+    <a href="food.html" class="button">Cuisine🍽</a>
   </div>
 
-  <section class="events-section">
+  <section class="events-section" data-aos="fade-up" data-aos-duration="1000">
     <h2>Cape Town</h2>
     <p class="overview">Cape Town, known as the "Mother City," is a vibrant blend of cultures, landscapes, and historic charm. From the iconic Table Mountain to the lively V&A Waterfront, Cape Town offers an experience like no other, combining natural beauty with a rich urban scene.</p>
     
@@ -46,6 +47,12 @@
       </div>
     </div>
   </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 
   <footer class="footer">
     <div class="footer-content">

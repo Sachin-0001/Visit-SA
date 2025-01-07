@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>South Africa Events</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,9 +21,9 @@
     </div>
 
     <section id="upcoming-events" class="events-section">
-      <h2>Events</h2>
-      <p class="overview">South Africa is a vibrant tapestry of cultures and traditions, and its events reflect this rich diversity. From electrifying music festivals to colorful cultural celebrations, the country offers a wide array of experiences that showcase its unique heritage and artistic expressions. Join locals and visitors alike in celebrating everything from jazz and arts to culinary delights and community gatherings. Whether you're dancing to the rhythm of live performances or indulging in the flavors of traditional cuisine, South Africa's events promise unforgettable memories and a deeper connection to its captivating culture.</p>
-      <div class="cards">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Events</h2>
+      <p class="overview" data-aos="fade-up" data-aos-duration="1000">South Africa is a vibrant tapestry of cultures and traditions, and its events reflect this rich diversity. From electrifying music festivals to colorful cultural celebrations, the country offers a wide array of experiences that showcase its unique heritage and artistic expressions. Join locals and visitors alike in celebrating everything from jazz and arts to culinary delights and community gatherings. Whether you're dancing to the rhythm of live performances or indulging in the flavors of traditional cuisine, South Africa's events promise unforgettable memories and a deeper connection to its captivating culture.</p>
+      <div class="cards" data-aos="fade-up" data-aos-duration="1000">
           <div class="event-card">
               <img src="assets/ctjf.jpg" alt="Cape Town Jazz Festival">
               <h3>Cape Town Jazz Festival</h3>
@@ -89,5 +90,10 @@
             <p>© 2024 South Africa Tourism. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

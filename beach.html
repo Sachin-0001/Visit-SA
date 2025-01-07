@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explore Boulder's Beach</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +19,7 @@
     <a href="food.html" class="button">Cuisine🍽️</a>
   </div>
 
-  <section class="events-section">
+  <section class="events-section" data-aos="fade-up" data-aos-duration="1000">
     <h2>Boulder's Beach</h2>
     <p class="overview">Boulder's Beach is famous for its unique colony of African penguins, set against a backdrop of smooth boulders, clear waters, and pristine sandy beaches. It's a family-friendly spot where visitors can enjoy the beautiful scenery and interact with penguins.</p>
     
@@ -61,5 +62,10 @@
       <p>© 2024 South Africa Tourism. All rights reserved.</p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
